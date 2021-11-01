@@ -1,0 +1,28 @@
+.scroll-grid {
+  background-image: url('https://unsplash.com/assets/api/api-photo-grid@2x-3b92db4cdfc938c6dde2291ca1c78ab7ace98ef916a8dd08c00a6b006c0b631b.jpg ');
+  height: 39rem;
+  background-size: 2420px;
+  width: 7260px;
+  background-repeat: repeat-x;
+  background-position: center;
+  -webkit-animation: scroll-grid 180s linear infinite;
+  animation: scroll-grid 180s linear infinite;
+  display: block;
+}
+.about {
+  overflow: hidden;
+}
+@keyframes scroll-grid {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-2420px, 0, 0);
+    transform: translate3d(-2420px, 0, 0);
+  }
+}
+
+* {
+  animation-duration: 102s;
+}

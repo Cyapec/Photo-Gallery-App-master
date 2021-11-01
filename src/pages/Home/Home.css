@@ -1,0 +1,16 @@
+.poster {
+  background-image: url('.//..//..//assert/img/Home.png');
+  height: 34rem;
+  width: 100%;
+  background-repeat: repeat-x;
+  display: block;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+.text {
+  color: #27364c;
+  font-family: 'Roboto', sans-serif;
+  font-style: unset;
+  margin-right: 2.5rem;
+}

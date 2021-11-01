@@ -1,0 +1,113 @@
+.title {
+  color: #ffffff;
+}
+
+.css-1lxih1g-MuiCircularProgress-root {
+  display: block;
+  margin: 0 auto;
+}
+.poster {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.gallery {
+  --webkit-column-count: 5;
+  --moz-column-count: 5;
+  column-count: 5;
+  --webkit-column-width: 19%;
+  --moz-column-width: 19%;
+  column-count: 19%;
+  padding: 25px;
+}
+.image {
+  border-radius: 10px;
+}
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.gallery .pics:hover {
+  filter: opacity(0.8);
+  transform: scale(1.1);
+  overflow: visible;
+}
+
+@media (max-width: 1024px) {
+  .gallery {
+    --webkit-column-count: 2;
+    --moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  a {
+    font-size: 0.5rem;
+  }
+  .gallery {
+    --webkit-column-count: 1;
+    --moz-column-count: 1;
+    column-count: 1;
+    --webkit-column-width: 100%;
+    --moz-column-width: 100%;
+    column-count: 100%;
+  }
+}
+
+.model {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #191515;
+  transition: opacity 0.4s ease, visibility 0.4s ease, trasform 0.4s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  overflow: hidden;
+  z-index: 999;
+}
+
+.model.open {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.model img {
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  display: block;
+  line-height: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.model.open svg {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 2rem;
+  height: 2rem;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.header {
+  max-width: 1400px;
+  margin: 0 auto;
+}
